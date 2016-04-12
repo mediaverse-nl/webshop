@@ -22,3 +22,8 @@ Route::get('inloggen', [
 ]);
 
 Route::resource('product', 'ProductController');
+
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
