@@ -27,3 +27,8 @@ Route::resource('product', 'ProductController');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('admin', [
+    'middleware' => 'admin', 
+    'uses' => 'AdminController@index'
+]);
