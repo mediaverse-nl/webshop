@@ -32,3 +32,5 @@ Route::get('admin', [
     'middleware' => 'admin', 
     'uses' => 'AdminController@index'
 ]);
+
+Route::get('profile/{id}', 'UserController@showProfile');
